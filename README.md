@@ -1,1 +1,3 @@
 # Portfolio-app
+
+This web app is still on progress, it is the web application where you will be able to introduce yourself all about your status, portfolio, contact etc. Just keep around , good things are coming....
