@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #ffffff;
-  --color-secondary: #4427ae;
+  --color-secondary: #ae2771;
   --color-white: #000;
   --color-black: #ffffff;
   --color-grey0: #f8f8f8;
@@ -32,6 +32,20 @@
   --color-grey3: #6c7983;
   --color-grey4: #454e56;
   --color-grey5: #dbe1e8;
+  --color-grey6: #12181b;
+}
+
+.dark-mode {
+  --color-primary: #191d2b;
+  --color-secondary: #0f5ba3;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey1: #dbe1e8;
+  --color-grey2: #6c7983;
+  --color-grey3: #6c7983;
+  --color-grey4: #454e56;
+  --color-grey5: #2a2e35;
   --color-grey6: #12181b;
 }
 
@@ -618,11 +632,14 @@ section {
   display: flex;
   justify-content: flex-start;
 }
-.contact-content .contact-icon {
+.contact-content .contact-icons {
+  display: flex;
+}
+.contact-content .contact-icons .contact-icon {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content .contact-icon a {
+.contact-content .contact-icons .contact-icon a {
   display: flex;
   align-items: center;
   color: var(--color-white);
@@ -635,11 +652,16 @@ section {
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
 }
-.contact-content .contact-icon a:hover {
+.contact-content .contact-icons .contact-icon a:hover {
   background-color: var(--color-secondary);
 }
-.contact-content .contact-icon a:hover i {
+.contact-content .contact-icons .contact-icon a:hover i {
   color: var(--color-primary);
+}
+.contact-content .contact-icons .contact-icon .size {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
 }
 
 .controls {

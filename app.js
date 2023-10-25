@@ -28,11 +28,29 @@ function pageTransitions() {
       element.classList.add("active");
     }
   });
-  //Toggle theme
+  /*Toggle theme
   const themeBtn = document.querySelector(".theme-btn");
   themeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
+  });*/
+
+  //Change theme
+  const themeBtn = document.querySelector(".theme-btn");
+  const themes = ["light-mode", "dark-mode", "green-mode"];
+  let currentThemeIndex = 2;
+
+  themeBtn.addEventListener("click", () => {
+    const element = document.body;
+
+    // Remove the current theme class
+    element.classList.remove(themes[currentThemeIndex]);
+
+    // Increment the theme index and wrap it around if it exceeds the array length
+    currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+
+    // Add the new theme class
+    element.classList.add(themes[currentThemeIndex]);
   });
 }
 
