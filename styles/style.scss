@@ -337,6 +337,15 @@ section {
             background-color: var(--color-secondary);
             transition: all 0.4s ease-in-out;
           }
+          .PHP {
+            width: 75%;
+          }
+          .laravel {
+            width: 85%;
+          }
+          .MySQL {
+            width: 85%;
+          }
           .javascript {
             width: 80%;
           }
@@ -403,6 +412,10 @@ section {
     background-color: var(--color-grey5);
     transform: translateX(-50%);
   }
+}
+.getcore {
+  color: rgba(255, 68, 0, 0.781) !important;
+  font-size: large;
 }
 .tl-duration {
   display: flex;
