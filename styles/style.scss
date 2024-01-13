@@ -161,13 +161,13 @@ section {
     justify-content: center;
     padding-right: 18rem;
     .name {
-      font-size: 2rem;
+      font-size: 1.5rem;
       span {
         color: var(--color-secondary);
       }
     }
     p {
-      margin: 1.5rem 0;
+      margin: 0.5rem 0;
       line-height: 2rem;
     }
   }
@@ -337,17 +337,15 @@ section {
             background-color: var(--color-secondary);
             transition: all 0.4s ease-in-out;
           }
-          .PHP {
-            width: 75%;
-          }
-          .laravel {
-            width: 85%;
-          }
-          .MySQL {
-            width: 85%;
+          //Programming languages
+          .solidity {
+            width: 95%;
           }
           .javascript {
             width: 80%;
+          }
+          .PHP {
+            width: 75%;
           }
           .html {
             width: 95%;
@@ -355,15 +353,38 @@ section {
           .css {
             width: 70%;
           }
-          .react {
+          //Frameworks
+          .hardhat {
             width: 90%;
-          }
-          .solidity {
-            width: 85%;
           }
           .next {
             width: 90%;
           }
+          .react {
+            width: 90%;
+          }
+          .laravel {
+            width: 85%;
+          }
+          //Testing tools
+          .clickup {
+            width: 95%;
+          }
+          .jira {
+            width: 60%;
+          }
+          //Database management
+          .MySQL {
+            width: 85%;
+          }
+          .mongo {
+            width: 75%;
+          }
+          //CMS
+          .sanity {
+            width: 80%;
+          }
+          //
         }
       }
     }
@@ -414,10 +435,11 @@ section {
   }
 }
 .getcore {
-  color: rgba(255, 68, 0, 0.781) !important;
+  color: var(--color-secondary) !important;
   font-size: large;
 }
 .tl-duration {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
